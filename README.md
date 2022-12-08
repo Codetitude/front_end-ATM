@@ -1,15 +1,10 @@
 # front_end-ATM
 
-# back_end-ATM
-
-# Help-Back-End
-
 #### Date: 12/15/22
 
 [Trello](https://trello.com/b/CTPSGjON/help)
-[Github](https://github.com/dannypeterson/Help-Back-End)
 [Heroku](https://help-front-end.herokuapp.com/)
-[Front End ReadMe](https://github.com/skyeager/Help-Front-End/tree/main/help-app)
+[back_end ReadMe](https://github.com/Codetitude/back_end-ATM)
 
 #### **_By: Maciej Parol_**
 
@@ -39,11 +34,11 @@
 
 <figcaption>ATM! ERD</figcaption>
 
-## ![ERD](https://app.diagrams.net/?libs=general;er#)
+## ![ERD]()
 
 <figcaption>ATM! Component Hierarchy Diagram</figcaption>
 
-## ![Component Hierarchy Diagram]
+## ![Component Hierarchy Diagram]()
 
 #### **_Future Updates_**
 
