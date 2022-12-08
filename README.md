@@ -34,11 +34,11 @@
 
 <figcaption>ATM! ERD</figcaption>
 
-## ![ERD]()
+## ![ERD](Screen Shot 2022-12-08 at 9.15.50 AM.png )
 
 <figcaption>ATM! Component Hierarchy Diagram</figcaption>
 
-## ![Component Hierarchy Diagram]()
+## ![Component Hierarchy Diagram](https://i.imgur.com/8Yd7Oeh.jpg)
 
 #### **_Future Updates_**
 
