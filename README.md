@@ -34,7 +34,7 @@
 
 <figcaption>ATM! ERD</figcaption>
 
-## ![ERD](Screen Shot 2022-12-08 at 9.15.50 AM.png )
+## ![ERD](<[Imgur](https://i.imgur.com/U1ZerJz.png)>)
 
 <figcaption>ATM! Component Hierarchy Diagram</figcaption>
 
