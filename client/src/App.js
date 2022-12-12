@@ -6,6 +6,7 @@ import ProfilePage from './pages/ProfilePage'
 import BlogFeed from './pages/BlogFeed'
 import ComicGenres from './pages/ComicGenres'
 import ComicTitles from './pages/ComicTitles'
+import CreatePost from './components/CreatePost'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/BlogFeed" element={<BlogFeed />} />
           <Route path="/ComicGenres" element={<ComicGenres />} />
           <Route path="/ComicTitles" element={<ComicTitles />} />
+          <Route path="/CreatePost" element={<CreatePost />} />
         </Routes>
       </main>
     </div>
