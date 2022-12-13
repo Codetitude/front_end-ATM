@@ -1,4 +1,19 @@
 .nav {
   display: flex;
   flex-direction: column;
+  background-color: rgb(93, 142, 125);
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signuppage {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ border: black solid 5px;
 }

@@ -1,5 +1,11 @@
+import Header from '../components/Header'
+
 const CreatePost = () => {
-  return <div></div>
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
 
 export default CreatePost

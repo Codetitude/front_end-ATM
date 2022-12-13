@@ -16,7 +16,7 @@ const Header = () => {
           </li>
 
           <li>
-            <Link to="/ComicGenres">Comics by Genre</Link>
+            <Link to="/ComicList">Comic List</Link>
           </li>
 
           <li>
@@ -26,6 +26,10 @@ const Header = () => {
           <li>
             <Link to="/logout">Logout</Link>
           </li>
+
+          {/* <li>
+            <Link to="/logout">SearchBar</Link>
+          </li> */}
 
           <li>
             <p className="navbar-p" onClick={() => navigate(-1)}>
