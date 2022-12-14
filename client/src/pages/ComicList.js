@@ -1,9 +1,9 @@
 import Header from '../components/Header'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-// import Client from '../services/api'
+import Client from '../services/api'
 import { BASE_URL } from '../services/api'
-import axios from 'axios'
+// import axios from 'axios'
 
 const ComicList = ({ user }) => {
   let navigate = useNavigate()
@@ -13,7 +13,7 @@ const ComicList = ({ user }) => {
   // `http://beta.comicvine.com/api/issues/?api_key=${process.env.REACT_APP_COMIC_VINE_KEY}`
 
   const getComics = async () => {
-    const response = await axios.get(`${BASE_URL}/comic_list/`)
+    const response = await Client.get(`${BASE_URL}/comic_list/`)
     setComics(response.data)
     console.log(response)
   }
@@ -25,6 +25,25 @@ const ComicList = ({ user }) => {
   return user ? (
     <div>
       <Header />
+      <div className="">
+        <h1 className="landingPageSubtitle">Comic List</h1>
+        <div className="">
+          {comics.map((comic) => (
+            <div key={comic.id}>
+              <div className="restaurant-card">
+                <h2>{comic.title}</h2>
+                <img
+                  className="restaurant-list-image"
+                  src={comic.image}
+                  alt={comic.title}
+                />
+                <img src={comic.publisher} alt=""></img>
+                <h3>{comic.link}</h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   ) : (
     <div className="protected">

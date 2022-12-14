@@ -37,11 +37,10 @@ const SignUp = () => {
   }
 
   return (
-    <div>
-      <header className="signuppage"></header>
-      <h1 className="title signup">ATM</h1>
-      <h3>All Things Media</h3>
-      <form className="signup-form" onSubmit={handleSubmit}>
+    <div className="landingpage">
+      <h1 className="landingPageTitle">ATM</h1>
+      <h3 className="landingPageSubtitle">All Things Media</h3>
+      <form className="signinform" onSubmit={handleSubmit}>
         <label htmlFor="username">Username:</label>
         <input
           required
@@ -87,7 +86,7 @@ const SignUp = () => {
           value={signUpState.confirmPassword}
         />
         <br />
-        <button className="login-button" type="submit">
+        <button className="signup-button" type="submit">
           Sign up!
         </button>
         <div className="back-to-login">

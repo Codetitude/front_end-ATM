@@ -33,10 +33,14 @@ const LandingPage = ({ setUser }) => {
   }
 
   return (
-    <div>
-      <h1>ATM </h1>
+    <div className="landingpage">
+      <h1 className="landingPageTitle">ATM </h1>
 
-      <h2>all things media</h2>
+      <h2 className="landingPageSubtitle">all things media</h2>
+      <br />
+      <br />
+      <br />
+      <br />
 
       <form className="signinform" onSubmit={handleSubmit}>
         <label className="login" htmlFor="username">
@@ -83,11 +87,11 @@ const LandingPage = ({ setUser }) => {
         >
           Sign in!
         </button>
+        <p>Don't have an account?</p>
+        <button className="login-button" onClick={() => navigate('/signup')}>
+          Sign up
+        </button>
       </form>
-      <p>Don't have an account?</p>
-      <button className="login-button" onClick={() => navigate('/signup')}>
-        Sign up
-      </button>
     </div>
   )
 }

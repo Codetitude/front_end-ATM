@@ -37,10 +37,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<LandingPage setUser={setUser} />} />
-          <Route path="/ProfilePage" element={<ProfilePage />} />
+          <Route path="/ProfilePage" element={<ProfilePage user={user} />} />
           <Route path="/BlogFeed" element={<BlogFeed user={user} />} />
           <Route path="/ComicList" element={<ComicList user={user} />} />
-          <Route path="/CreatePost" element={<CreatePost />} />
+          <Route path="/CreatePost" element={<CreatePost user={user} />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route
             path="/LogOut"
