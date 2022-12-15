@@ -4,7 +4,15 @@ body {
 }
 
 
-
+.logo {
+  
+  width: 350px;
+  height:250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 
 .nav {
   display: flex;
@@ -98,6 +106,8 @@ align-items: center;
 .landingPageSubtitle {
   font-size: 40px;
   text-align: center;
+  font-family:fantasy;
+  font-style: italic;
   
 }
 .signinform {

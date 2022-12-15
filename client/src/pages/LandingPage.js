@@ -34,7 +34,8 @@ const LandingPage = ({ setUser }) => {
 
   return (
     <div className="landingpage">
-      <h1 className="landingPageTitle">ATM </h1>
+      {/* <h1 className="landingPageTitle">ATM </h1> */}
+      <img className="logo" alt="" src="../../atm.png"></img>
 
       <h2 className="landingPageSubtitle"> Your source for all things media</h2>
       <br />
