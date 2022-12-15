@@ -46,10 +46,16 @@ const BlogFeed = ({ user }) => {
             <div className="review-content">
               <p className="description">{blogPost.description}</p>
               <p className="rating">{blogPost.link}</p>
-              <button onClick={() => navigate(`/UpdatePost/${blogPost.id}`)}>
+              <button
+                className="signup-button"
+                onClick={() => navigate(`/UpdatePost/${blogPost.id}`)}
+              >
                 edit your post{' '}
               </button>
-              <button onClick={() => deleteBlogPosts(blogPost.id)}>
+              <button
+                className="signup-button"
+                onClick={() => deleteBlogPosts(blogPost.id)}
+              >
                 delete your post
               </button>
             </div>

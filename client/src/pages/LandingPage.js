@@ -36,7 +36,7 @@ const LandingPage = ({ setUser }) => {
     <div className="landingpage">
       <h1 className="landingPageTitle">ATM </h1>
 
-      <h2 className="landingPageSubtitle">all things media</h2>
+      <h2 className="landingPageSubtitle"> Your source for all things media</h2>
       <br />
       <br />
       <br />

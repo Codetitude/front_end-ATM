@@ -41,50 +41,52 @@ const CreatePost = ({ user }) => {
   return (
     <div>
       <Header />
-      <h1 className="landingPageSubtitle">New blog post </h1>
-      <form className="makepost" onSubmit={handleSubmit}>
-        <label htmlFor="image">Title :</label>
-        <input
-          className="form-box"
-          onChange={handleChange}
-          type="text"
-          id="title"
-          value={formState.title}
-        />
+      <div>
+        <h1 className="landingPageSubtitle">New blog post </h1>
+        <form className="makepost" onSubmit={handleSubmit}>
+          <label htmlFor="image">Title :</label>
+          <input
+            className="form-box"
+            onChange={handleChange}
+            type="text"
+            id="title"
+            value={formState.title}
+          />
 
-        <label htmlFor="image">Image (url):</label>
-        <input
-          className="form-box"
-          onChange={handleChange}
-          type="text"
-          id="image"
-          value={formState.image}
-        />
+          <label htmlFor="image">Image (url):</label>
+          <input
+            className="form-box"
+            onChange={handleChange}
+            type="text"
+            id="image"
+            value={formState.image}
+          />
 
-        <label htmlFor="description">Description:</label>
-        <textarea
-          className="textarea"
-          onChange={handleChange}
-          value={formState.description}
-          id="description"
-          cols="50"
-          rows="10"
-        ></textarea>
-        <label htmlFor="link">Link (url):</label>
-        <input
-          className="form-box"
-          onChange={handleChange}
-          type="text"
-          id="link"
-          value={formState.link}
-        />
-        <br />
-        <br />
+          <label htmlFor="description">Description:</label>
+          <textarea
+            className="textarea"
+            onChange={handleChange}
+            value={formState.description}
+            id="description"
+            cols="50"
+            rows="10"
+          ></textarea>
+          <label htmlFor="link">Link (url):</label>
+          <input
+            className="form-box"
+            onChange={handleChange}
+            type="text"
+            id="link"
+            value={formState.link}
+          />
+          <br />
+          <br />
 
-        <button className="post-review" type="submit">
-          post to blog
-        </button>
-      </form>
+          <button className="post-review" type="submit">
+            post to blog
+          </button>
+        </form>
+      </div>
     </div>
   )
 }
