@@ -46,7 +46,7 @@ const BlogFeed = ({ user }) => {
             <div className="review-content">
               <p className="description">{blogPost.description}</p>
               <p className="rating">{blogPost.link}</p>
-              <button onClick={() => navigate(`/update/${blogPost.id}`)}>
+              <button onClick={() => navigate(`/UpdatePost/${blogPost.id}`)}>
                 edit your post{' '}
               </button>
               <button onClick={() => deleteBlogPosts(blogPost.id)}>

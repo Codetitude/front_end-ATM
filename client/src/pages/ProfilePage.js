@@ -2,10 +2,11 @@ import Header from '../components/Header'
 import { useState, useEffect } from 'react'
 import Client from '../services/api'
 import { BASE_URL } from '../services/api'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 const ProfilePage = ({ user }) => {
   let navigate = useNavigate()
+  let { id } = useParams()
   const [profileName, setProfileName] = useState()
   const [userPicks, setUserPicks] = useState()
 
