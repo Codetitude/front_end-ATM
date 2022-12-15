@@ -33,6 +33,7 @@ const Header = () => {
 
           <li onClick={() => navigate(-1)}> Back</li>
         </ul>
+        <img className="navlogo" alt="" src="../../atm.png"></img>
       </nav>
     </header>
   )

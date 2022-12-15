@@ -61,6 +61,12 @@ marker {
   height: 40px;
 }
 
+.navlogo {
+
+  display: block;
+  margin: auto;
+  
+}
 
 
 
@@ -200,6 +206,12 @@ label {
 
 }
 
+.comiclist-image {
+
+  border: black solid 3px;
+  border-radius: 3px;
+  
+}
 
 .blog-wrapper {
   
