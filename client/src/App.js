@@ -2,7 +2,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { CheckSession } from './services/Auth'
-
+import UpdatePost from './components/UpdatePost'
 import LandingPage from './pages/LandingPage'
 import ProfilePage from './pages/ProfilePage'
 import BlogFeed from './pages/BlogFeed'
@@ -42,6 +42,8 @@ function App() {
           <Route path="/ComicList" element={<ComicList user={user} />} />
           <Route path="/CreatePost" element={<CreatePost user={user} />} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/UpdatePost/:id" element={<UpdatePost user={user} />} />
+
           <Route
             path="/LogOut"
             element={<Logout handleLogOut={handleLogOut} setUser={setUser} />}

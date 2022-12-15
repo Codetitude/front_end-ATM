@@ -31,11 +31,7 @@ const Header = () => {
             <Link to="/logout">SearchBar</Link>
           </li> */}
 
-          <li>
-            <p className="navbar-p" onClick={() => navigate(-1)}>
-              Back
-            </p>
-          </li>
+          <li onClick={() => navigate(-1)}> Back</li>
         </ul>
       </nav>
     </header>

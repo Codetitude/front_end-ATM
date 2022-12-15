@@ -1,15 +1,32 @@
+
+body {
+  background-color: rgb(197, 208, 208);
+}
+
+
+
+
 .nav {
   display: flex;
   flex-direction: column-reverse;
   background-color: rgb(93, 142, 125);
+  border: black solid 3px;
+  border-radius: 3px;
+  width: 100vw;
+  margin-left: 3px;
+  margin-right: 3px;
+  
   
 }
 
 .navlinks {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   justify-content: center;
   list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav_links li a {
@@ -20,15 +37,34 @@
   font-family: 'Raleway';
   font-size: 18px;
   color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-/* 
+marker {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  height: 40px;
+}
+
+
+
+
+
+
 .signuppage {
 
   display: flex;
   justify-content: center;
   align-items: center;
  border: black solid 5px;
-} */
+} 
 
 .landingpage {
   background-color: rgb(93, 142, 125);
@@ -39,15 +75,15 @@
   flex-direction: column;
 }
 
-/* 
 
-.form {
+
+.makepost {
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 
-} */
+} 
 
 
 
@@ -108,17 +144,72 @@ label {
 }
 
 
-
-
-
-
-
-
-
 .login-button, .signup-button {
   width: 80px;
   height: 30px;
   border-radius: 3px;
   cursor: pointer;
   font-family: 'Zilla Slab', serif;
+}
+
+
+.comiclist {
+
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+
+.comic-card {
+
+  padding:25px;
+}
+
+.comiclistdetails {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding:5px;
+  background-color:rgb(93, 142, 125) ;
+  border: black solid 3px;
+  border-radius: 3px;
+}
+
+.comiclistlabel {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.comictitle {
+  text-align: center;
+  text-decoration: underline;
+
+}
+
+
+.blog-wrapper {
+  
+  padding:25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.blogtitle {
+  
+  font-size: 30px;
+}
+
+.blogfeed {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:20px;
 }

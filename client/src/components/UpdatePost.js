@@ -1,11 +1,12 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Header from '../components/Header'
 import Client from '../services/api'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BASE_URL } from '../services/api'
 
-const CreatePost = ({ user }) => {
+const UpdatePost = ({ user }) => {
   let navigate = useNavigate()
+  let { id } = useParams()
 
   const initialState = {
     userId: user.id,
@@ -16,6 +17,16 @@ const CreatePost = ({ user }) => {
   }
   const [formState, setFormState] = useState(initialState)
 
+  const getBlogPostsById = async () => {
+    let response = await Client.get(`${BASE_URL}/blog_post/${id}`)
+    console.log(response.data)
+    setFormState(response.data)
+  }
+
+  useEffect(() => {
+    getBlogPostsById()
+  }, [])
+
   const handleChange = (e) => {
     setFormState({
       ...formState,
@@ -25,15 +36,15 @@ const CreatePost = ({ user }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const postMade = {
+    const postUpdated = {
       ...formState
     }
 
-    let response = await Client.post(
-      `${BASE_URL}/blog_post/create/${user.id}`,
-      postMade
+    let response = await Client.put(
+      `${BASE_URL}/blog_post/update/${id}`,
+      postUpdated
     )
-    setFormState(response)
+    setFormState(initialState)
     console.log(response)
     navigate('/BlogFeed')
   }
@@ -82,11 +93,11 @@ const CreatePost = ({ user }) => {
         <br />
 
         <button className="post-review" type="submit">
-          post to blog
+          update your post
         </button>
       </form>
     </div>
   )
 }
 
-export default CreatePost
+export default UpdatePost
